@@ -1307,6 +1307,7 @@ body.product-page {
 	float: right;
 
 	.btn-primary {
+		color: var(--blue-500);
 		background-color: var(--gray-600);
 		box-shadow: 0 0 0 0.2rem var(--gray-400);
 	}

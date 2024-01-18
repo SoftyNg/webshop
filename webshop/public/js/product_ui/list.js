@@ -174,7 +174,7 @@ webshop.ProductList = class {
 		} else if (settings.enabled && (settings.allow_items_not_in_stock || item.in_stock)) {
 			return `
 				<div id="${ item.name }" class="btn
-					btn-sm btn-primary btn-add-to-cart-list mb-0
+					btnmine mb-0
 					${ item.in_cart ? 'hidden' : '' }"
 					data-item-code="${ item.item_code }"
 					style="margin-top: 0px !important; max-height: 30px; float: right;

@@ -195,7 +195,7 @@ class ItemConfigure {
 
 		const item_add_to_cart = one_item ? `
 			<button data-item-code="${one_item}"
-				class="btn btn-primary btn-add-to-cart w-100"
+				class="btn btnmine btn-add-to-cart w-100"
 				data-action="btn_add_to_cart"
 			>
 				<span class="mr-2">

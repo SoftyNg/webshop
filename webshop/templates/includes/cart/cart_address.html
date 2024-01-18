@@ -6,7 +6,7 @@
 
 <div class="mb-3 frappe-card p-5" data-section="shipping-address">
 	<div class="d-flex">
-		<div class="col-6 address-header"><h6>{{ _("Shipping Address") }}</h6></div>
+		<div class="col-6 address-header"><h6>{{ _("Delivery Address") }}</h6></div>
 		<div class="col-6" style="padding: 0;">
 			<a class="ml-4 btn-new-address" role="button">{{ _("Add a new address") }}</a>
 		</div>
@@ -28,7 +28,7 @@
 <div class="checkbox ml-1 mb-2">
 	<label for="input_same_billing">
 		<input type="checkbox" class="product-filter" id="input_same_billing" checked style="width: 14px !important">
-		<span class="label-area font-md">{{ _('Billing Address is same as Shipping Address') }}</span>
+		<span class="label-area font-md">{{ _('Billing Address is same as Delivery Address') }}</span>
 	</label>
 </div>
 
@@ -84,30 +84,14 @@ frappe.ready(() => {
 					fieldtype: 'Data',
 					reqd: 1
 				},
-				{
-					label: __('Address Line 2'),
-					fieldname: 'address_line2',
-					fieldtype: 'Data'
-				},
+			
 				{
 					label: __('City/Town'),
 					fieldname: 'city',
 					fieldtype: 'Data',
 					reqd: 1
 				},
-				{
-					label: __('State'),
-					fieldname: 'state',
-					fieldtype: 'Data'
-				},
-				{
-					label: __('Country'),
-					fieldname: 'country',
-					fieldtype: 'Link',
-					options: 'Country',
-					only_select: true,
-					reqd: 1
-				},
+			
 				{
 					fieldname: "column_break0",
 					fieldtype: "Column Break",
@@ -119,15 +103,11 @@ frappe.ready(() => {
 					fieldtype: 'Select',
 					options: [
 						'Billing',
-						'Shipping'
+						'Delivery'
 					],
 					reqd: 1
 				},
-				{
-					label: __('Postal Code'),
-					fieldname: 'pincode',
-					fieldtype: 'Data'
-				},
+			
 				{
 					fieldname: "phone",
 					fieldtype: "Data",
